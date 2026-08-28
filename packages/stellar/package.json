@@ -1,23 +1,23 @@
 {
-    "name": "@craft/stellar",
-    "version": "0.1.0",
-    "private": true,
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "build": "tsc",
-        "dev": "tsc --watch",
-        "lint": "eslint src/**/*.ts",
-        "test": "vitest run --passWithNoTests"
-    },
-    "dependencies": {
-        "@craft/types": "*",
-        "stellar-sdk": "^11.2.2"
-    },
-    "devDependencies": {
-        "@types/node": "^20.10.6",
-        "fast-check": "^3.15.1",
-        "typescript": "^5.3.3",
-        "vitest": "^1.1.0"
-    }
+  "name": "@craft/stellar",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@craft/types": "*",
+    "stellar-sdk": "^11.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "fast-check": "^3.15.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
 }
